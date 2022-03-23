@@ -1,0 +1,13 @@
+
+[Unit]
+Description=nodebb dump to google drive
+
+[Service]
+WorkingDirectory=/root/nodebb-dump
+ExecStart=/usr/bin/python3 /root/nodebb-dump/main.py
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+Type=simple
+
+[Install]
+WantedBy=default.target
