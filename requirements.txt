@@ -1,0 +1,4 @@
+python-dotenv
+wheel
+git+https://github.com/thewh1teagle/googled
+schedule
