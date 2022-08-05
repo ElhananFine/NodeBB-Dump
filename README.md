@@ -1,6 +1,6 @@
 Hello! <br>
-It is a daily backup script for Google Drive of nodeBB-based forums. <br>
-The script stops MongoDB and nodeBB before starting the backup, performs a backup, and runs back. <br>
+It is a daily backup script for Google Drive of NodeBB-based forums. <br>
+The script stops MongoDB and NodeBB before starting the backup, performs a backup, and runs back. <br>
 The setting in the script is a daily backup at 12 in the morning and at noon, and automatic deletion of their backups older than 3 days, but you are free to change the hours in the main.py file. <br>
 <br>
 How to use a script: <br>
