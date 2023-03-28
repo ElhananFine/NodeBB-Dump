@@ -9,7 +9,7 @@ import schedule
 import time
 
 drive = Drive()
-keep_hours_back = 24 * 3 # 3 days
+keep_hours_back = 24 * 7 # 7 days
 
 def clean_old_backups():
     files = drive.list_files_in_folder('nodebb_forum_backups')
