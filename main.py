@@ -29,7 +29,7 @@ def backup_nodebb():
     now = datetime.datetime.now().strftime("%d.%m.%Y-%H:%M:%S")
     dump_name = f'nodebb-{now}.gz'
     print(dump_name)
-    backup_mongo(settings.DB_NAME, os.environ['DB_USER'], os.environ['DB_PASSW'], dump_name)
+    backup_mongo(settings.DB_NAME, settings.DB_USER, settings.DB_PASSW, dump_name)
     set_nodebb(settings.NODE_BB_PATH, True)
 
     folder_id = drive.create_folder_if_not_exist('nodebb_forum_backups')
